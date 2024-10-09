@@ -1,0 +1,132 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #ffd7d7;
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background-color: #f8f9fa;
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+.star {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #bdc3c7;
+  transition: color 0.2s, transform 0.2s;
+  margin: 0 4px;
+}
+
+.star.active {
+  color: #f39c12;
+}
+
+.review-input {
+  width: 100%;
+  height: 120px;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+  resize: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #f8f9fa;
+}
+
+.review-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 1;
+  margin: 0 0.4rem;
+}
+
+.btn-cancel {
+  background-color: #ecf0f1;
+  color: #34495e;
+}
+
+.btn-cancel:hover {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.btn-submit {
+  background-color: #ffd7d7;
+  color: #2c3e50;
+}
+
+.btn-submit:hover {
+  background-color: #ffbfbf;
+  box-shadow: 0 3px 6px rgba(255, 215, 215, 0.3);
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .star {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

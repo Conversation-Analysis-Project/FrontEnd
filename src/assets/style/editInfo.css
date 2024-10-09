@@ -1,0 +1,186 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+
+.edit-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 90%;
+  max-width: 480px;
+}
+
+.title-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 12px;
+}
+
+.title-box .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.title-box .sub-title {
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  padding: 4px 16px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0 40px 0 8px;
+}
+
+.input-box input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+
+.info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 22px;
+  top: 14px;
+}
+
+.info-box .erase-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  margin-right: 6px;
+  padding: 3px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.info-box .erase-btn:hover {
+  color: #777;
+}
+
+.info-box span {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 42px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b75d0;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(3, 105, 199, 0.12);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: rgba(3, 105, 199, 0.24);
+}
+
+.radio-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  padding: 4px 16px;
+}
+
+.radio-box label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.radio-box label:last-child {
+  border: none;
+}
+
+input[type='radio'] {
+  width: 18px;
+  height: 18px;
+}
+
+.date-input-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  width: 100%;
+  height: 58px;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  padding: 4px 16px;
+}
+
+.date-input-box select {
+  border: none;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.date-input-box .year {
+  width: 200px;
+}
+
+.date-input-box .month,
+.date-input-box .day {
+  width: 120px;
+}
+
+.warning-area {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.warning-area .warn-icon {
+  font-size: 18px;
+  color: #999;
+}

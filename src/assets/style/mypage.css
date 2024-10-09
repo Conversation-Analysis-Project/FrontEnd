@@ -1,0 +1,111 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+
+.mypage-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 90%;
+  max-width: 480px;
+}
+
+.title-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.title-box .title {
+  font-size: 28px;
+  font-weight: 800;
+}
+.title-box .sub-title {
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.account-info,
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  padding: 18px 20px 8px 20px;
+  border: 1px solid #c6c6c6;
+  background-color: white;
+  box-shadow: 0px 1px 2px #dddddd;
+}
+
+.account-info h3,
+.user-info h3 {
+  padding: 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info-box {
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.info-box:last-child {
+  border-bottom: none;
+}
+
+.text {
+  color: #666;
+}
+
+.profile .sub-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+}
+
+.img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.img-box .pen-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  right: -3px;
+  top: 34px;
+  font-size: 12px;
+  color: #444;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+}
